@@ -1,0 +1,73 @@
+//STRUKTUR STRUCT
+
+struct nama_struct
+{
+<tipe_data> nama_field_1;
+
+<tipe_data> nama_field_2;
+
+... 
+
+<tipe_data> nama_field_n;
+}
+
+
+//CONTOH STRUCT
+include<iostream>
+using namespace std;
+
+
+struct Mahasiswa{ 
+string nama, npm;
+
+};
+
+int main(){ 
+Mahasiswa Mhs;
+
+cin>> Mhs.nama;
+cin>> Mhs.npm;
+
+cout<< Mhs.nama << " " << Mhs.npm;
+}
+
+//CLASS PUBLIC
+#include<iostream>
+using namespace std;
+class Mahasiswa{
+public:
+
+string nama, npm;
+};
+
+int main(){ 
+Mahasiswa Mhs;
+cin>> Mhs.nama; 
+cin>> Mhs.npm;
+
+cout<< Mhs.nama << " " << Mhs.npm;
+
+}
+
+//contoh class pake prosedur
+
+#include<iostream> 
+using namespace std;
+
+class Mahasiswa{
+public:
+string nama, npm;
+void Perkenalan(){ 
+cout<< "Npm: " << npm;
+cout<< "Nama: " << nama << endl;
+};
+
+int main(){
+
+Mahasiswa Mhs;
+cin>> Mhs.nama >> Mhs.npm;
+
+Mhs.Perkenalan();
+}
+
+//
