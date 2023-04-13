@@ -1,0 +1,135 @@
+//Deklarasi dan Inisialisasi C-String
+
+#include <iostream> 
+using namespace std;
+int main()(
+char nama[15]="John" char prodi[]="Ilkom";
+cout<<nama<<endl; 
+cout<<sizeof (nama) <<endl;
+cout<<prodi<<endl; cout<<sizeof(prodi)<<endl
+}
+
+//Input pada c-string
+
+//1. Cin.get() & cin ignore()
+
+#include <iostream>
+using namespace std;
+int main(){
+char nama[15];
+char npm[10];
+cin get (nama, 15);
+cin. ignore(); cin.get(npm, 10);
+cout << "Nama : <<< nama << endl;
+cout << "NPM : " << npm << endl;
+}
+
+//2. cin.putback()
+
+#include <iostream>
+using namespace std;
+int main(){
+char karakter;
+while (cin.get(karakter)){
+if (karakter 'a')
+cin.putback('x');
+else
+cout<<karakter;
+}
+}
+
+//2. strcat()
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+int main(){
+char firstName [50] = "Dhiaurrahman Raziq ";
+char lastName [50]= "Ramadhan";
+char fullName = strcat (firstName, lastName) cout << fullName;
+}
+
+//Fungsi strtol () and strtoul(), strtod ()
+
+//1. strtol()
+
+#include <iostream> #include <cstring>
+using namespace std;
+int main() {
+char endptr;
+char stri[] = "00011010John";
+Long valuel = strtol (str1, &endptr, 2); cout<<"The converted value is << value1 << endl; cout << "Unconverted part: " << er ptr << endl;
+char str2[] = "1CZidan";
+Long value2 = strtol (str2, &endptr, 16);. cout << "The converted value is " << value2 <<< endl;
+cout<<"Unconverted part: " << endptr << endl;
+char str3[] = "40Raziq"; Long value3 = strtoul (str3, &endptr, 10);
+cout<<"The converted value is << value} << endl;
+cout << "Unconverted part: " << endptr << endl;
+}
+
+//2. strtoul()
+
+#include <iostream>
+#include <cstring> using namespace std;
+int main() {
+char endptr;
+char str[]"00011010John";
+unsigned Long valuel strtoul (stri, &endptr, 2); =
+cout << "The converted value is " << value1 << endl; cout << "Unconverted part: << endptr << endl;
+char str2[] "1CZidan";
+unsigned Long value2 = strtoul (str2, &endptr, 16);
+cout << "The converted value is " << value2 << endl;
+cout << "Unconverted part: " << endptr << endl;
+char str3[] = "40Raziq"; unsigned Long value3 = strtoul (str3, &endptr, 10); cout << "The converted value is << value3 << endl; cout << "Unconverted part: << endptr << endl;
+}
+
+//3. strod()
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+int main() {
+char endptr;
+char stri[] = "10John";
+double value1 = strtod(stri, &endptr);
+cout << "The converted value is " << value1 << endl;
+cout << "Unconverted part: << endptr << endl;
+char str2[] = "20Zidan"; double value2 = strtod (str2,
+&endptr);
+cout << "The converted value is << value2 << endl;
+cout << "Unconverted part:
+" << endptr << endl;
+char str3[]"40Raziq";
+double value3= strtod (str3, &endptr);
+cout << "The converted value is " << value3 << endl;
+cout << "Unconverted part: " << endptr << endl;
+}
+
+//LANGKAH PRAKTIKUM
+#include<iostream>
+
+#include<cstring>
+
+using namespace std;
+
+int
+
+main(){
+
+char data[8][100] ("2117051024John Wilken Christoper N",
+
+"2117051009Nathania Santa N", "2117051048Dhiaurrahman Raziq R",
+
+"2117051025Stefanus Ferry S",
+
+"2117051088Fatimah Abbiyi K", "21170510953ihan Haya M",
+
+"2117051057Reza Nur Ramadhan", "2117051070Muhammad Zidan Pasya");
+
+char endPtr; for (int i 0; i < 8; i++){
+
+Long value= strtod(data[i], &endPtr); cout << "Nama : << endPtr << endl;
+
+cout << "NPM: " << value << endl; cout <<<< endl;
+}
+}
